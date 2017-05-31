@@ -1,0 +1,9 @@
+<div class="page-header">
+  <h3>User #<%= current_user.id %></h3>
+</div>
+
+<ul>
+  <% @user.photos.each do |photo| %>
+  <li><img src="<%= photo.image %>"></li>
+  <% end %>
+</ul>
