@@ -33,6 +33,9 @@ Rails.application.routes.draw do
 
   # DELETE
   get "/delete_like/:id", :controller => "likes", :action => "destroy"
+
+  # Route for My Likes resource
+  get "/my_likes", :controller => "my_likes", :action => "index"
   #------------------------------
 
   # Routes for the Photo resource:
