@@ -34,9 +34,11 @@ class PhotosController < ApplicationController
   end
 
   def edit
+
     @photo = Photo.find(params[:id])
 
     render("photos/edit.html.erb")
+
   end
 
   def update
